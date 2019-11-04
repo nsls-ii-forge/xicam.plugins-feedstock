@@ -23,6 +23,7 @@ requirements:
     - python >=3.6
     - appdirs
     - astropy
+    - entrypoints
     - fabio
     - requests
     - signalslot
