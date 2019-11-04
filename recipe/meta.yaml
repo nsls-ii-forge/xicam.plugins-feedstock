@@ -28,6 +28,7 @@ requirements:
     - requests
     - signalslot
     - virtualenv
+    - xicam.core
     - yapsy
 
 test:
