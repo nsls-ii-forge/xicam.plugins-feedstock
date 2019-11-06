@@ -27,6 +27,7 @@ requirements:
     - fabio
     - intake-bluesky
     - pyqt >=5
+    - pyqtgraph
     - requests
     - signalslot
     - virtualenv
