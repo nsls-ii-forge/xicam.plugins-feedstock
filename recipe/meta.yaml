@@ -25,6 +25,7 @@ requirements:
     - astropy
     - entrypoints
     - fabio
+    - pyqt >=5
     - requests
     - signalslot
     - virtualenv
