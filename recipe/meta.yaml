@@ -25,7 +25,7 @@ requirements:
     - astropy
     - entrypoints
     - fabio
-    - mesa-libgl-cos6-x86_64
+    - intake-bluesky
     - pyqt >=5
     - requests
     - signalslot
