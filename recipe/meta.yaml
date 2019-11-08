@@ -1,6 +1,6 @@
 {% set name = "xicam.plugins" %}
 {% set version = "2.1.11" %}
-{% set sha256 = "dfc5f57e84ad1aa554361e251e1b3d589bb02a733e27d0d12a6e0d93b4a6196f" %}
+{% set sha256 = "456975a3485a7edccc222df46a95a98ba3fee6adbd8bbc6867cb52c13f6b21a6" %}
 
 package:
   name: "{{ name|lower }}"
@@ -12,6 +12,7 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv "
 
 requirements:
@@ -22,15 +23,16 @@ requirements:
     - python >=3.6
     - appdirs
     - astropy
+    - entrypoints
     - fabio
+    - intake-bluesky
+    - pyqt >=5
+    - pyqtgraph
     - requests
     - signalslot
     - virtualenv
+    - xicam.core
     - yapsy
-
-test:
-  imports:
-    - xicam.plugins
 
 about:
   home: "https://github.com/synchrotrons/Xi-cam.plugins"
