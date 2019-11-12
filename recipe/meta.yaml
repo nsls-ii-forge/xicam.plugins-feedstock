@@ -3,17 +3,17 @@
 {% set sha256 = "2d993061f891d88f0cb8752283a843ca61e142a64e4615219c2733f51f6a6809" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://github.com/synchrotrons/Xi-cam.plugins/archive/{{ version }}.tar.gz"
+  url: https://github.com/synchrotrons/Xi-cam.plugins/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv "
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -24,8 +24,6 @@ requirements:
     - appdirs
     - astropy
     - entrypoints
-    - fabio
-    - intake-bluesky
     - pyqt >=5
     - pyqtgraph
     - requests
@@ -35,11 +33,12 @@ requirements:
     - yapsy
 
 about:
-  home: "https://github.com/synchrotrons/Xi-cam.plugins"
-  license: "BSD 3-Clause"
-  license_family: "BSD"
+  home: https://github.com/synchrotrons/Xi-cam.plugins
+  license: BSD 3-Clause
+  license_family: BSD
   license_file: LICENSE.md
-  summary: "The CAMERA platform for synchrotron data management, visualization, and reduction."
+  summary: The CAMERA platform for synchrotron data management, visualization, and reduction.
   description: |
-    The xicam.gui package contains all gui code of the Xi-cam platform, as part of the xicam namespace package. For the backend components, see "xicam.core".
-  
+    The xicam.gui package contains all gui code of the Xi-cam platform, as part
+    of the xicam namespace package. For the backend components, see
+    "xicam.core".
