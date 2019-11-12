@@ -1,6 +1,6 @@
 {% set name = "xicam.plugins" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "2d993061f891d88f0cb8752283a843ca61e142a64e4615219c2733f51f6a6809" %}
+{% set version = "2.2.2" %}
+{% set sha256 = "942a9a55001779223e8cfdd0caeaf17766f148347b93e98b37ac0d4cf34b8b3e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
