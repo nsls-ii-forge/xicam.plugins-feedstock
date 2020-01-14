@@ -32,9 +32,9 @@ requirements:
     - xicam.core
     - yapsy
 
-test:
-  imports:
-    - xicam.plugins
+#test:
+#  imports:
+#    - xicam.plugins
 
 about:
   home: https://github.com/synchrotrons/Xi-cam.plugins
