@@ -1,6 +1,6 @@
 {% set name = "xicam.plugins" %}
-{% set version = "2.2.4" %}
-{% set sha256 = "bc32d1b8488db9134f6c5b2cf656a22d7be24e2421c24b08389eab74cf7809a3" %}
+{% set version = "2.2.5" %}
+{% set sha256 = "d029bc2d0ecb1af7c0bee8e37e0ab7e337841889b76a61393d9ef4791cbab543" %}
 
 package:
   name: {{ name|lower }}
@@ -31,6 +31,10 @@ requirements:
     - virtualenv
     - xicam.core
     - yapsy
+
+#test:
+#  imports:
+#    - xicam.plugins
 
 about:
   home: https://github.com/synchrotrons/Xi-cam.plugins
